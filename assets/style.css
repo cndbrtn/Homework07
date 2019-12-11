@@ -26,6 +26,19 @@ nav li:hover {
     background: #4fe22a;
 }
 
+textarea {
+    height: 100%;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 10px 0 0;
+    border: 1px solid #4fe22a;
+    background: #000000;
+    color: #4fe22a;
+}
+
 h1 {
     font-size: larger;
 }
@@ -79,6 +92,19 @@ footer {
 
 /* classes */
 
+.modal {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: -1px;
+    left: 288px;
+    /* display: none; */
+    height: 280px;
+    width: 380px;
+}
+
+
+
 .container {
     /* width: 100%; */
     padding: 0;
@@ -90,9 +116,23 @@ footer {
     display: none;
 }
 
+.modal h5{
+    padding: 5px 0 5px 0;
+}
+
+.modal .container {
+    background: #000;
+    padding: 20px;
+}
+
+.modal .row {
+    height: auto;
+}
+
 .row {
    display: flex;
    height: 100%;
+   position: relative;
   
 }
 
@@ -125,6 +165,7 @@ footer {
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
     line-height: 1.5;
+    max-width: 650px
 }
 
 /* .side h1 {
