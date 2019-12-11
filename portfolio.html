@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNDBRTN PRTFLIO WBSITE</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">home</a></li>
+                <li id="porfolio"><a href="portfolio.html">portfolio</a></li>
+                <li id="contact">contact</li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="modal" id="contact-form">
+                <div class="container">
+
+                    <h5>Name: </h5>
+                    <input type="text" placeholder="your name">
+                    <h5>Email: </h5>
+                    <input type="text" placeholder="you@email.com">
+                    <h5>Comments: </h5>
+                    <textarea placeholder="your thoughts"></textarea>
+                    <div class="row">
+                        <button value="submit">Submit</button> <button value="clear">Clear</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="side">
+                <img class="fluid padding-bottom20" src="assets/img/profile-img.jpg">
+                <h3 id="hover-text">Hover over an image for more information</h3>
+            </div>
+            <div class="main">
+                <div class="flex-wrap">
+                    <div data-value="folio1" class="hover">blah1</div>
+                    <div data-value="folio2" class="hover">blah2</div>
+                    <div data-value="folio3" class="hover">blah3</div>
+                    <div data-value="folio4" class="hover">blah4</div>
+                    <div data-value="folio5" class="hover">blah5</div>
+                </div>
+            </div>
+        </div>
+        <footer>Bitch</footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
