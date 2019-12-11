@@ -210,6 +210,12 @@ footer {
     }
 }
 
+@media (max-width: 720px) {
+    .modal {
+        left: 7%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .container {
         width: 99.6%;
@@ -221,13 +227,18 @@ footer {
         font-size: small;
     }
 
-        .row {
+    .row {
         flex-direction: column;
     }
 
     .side {
         border-left: none;
         border-bottom: 1px solid #4fe22a;
+    }
+
+    .modal {
+        /* left: 1%; */
+        width: 340px;
     }
 
     /* .container {
@@ -238,6 +249,11 @@ footer {
 @media screen and (max-width: 380px) {
     nav li {
         font-size: x-small;
+    }
+
+    .modal {
+        left: 2%;
+        width: 260px;
     }
 }
 
