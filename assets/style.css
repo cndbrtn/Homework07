@@ -12,18 +12,31 @@ body {
     color: #4fe22a;
 }
 
+nav {
+    border-bottom: 1px solid #4fe22a;
+}
+
+footer {
+    border-top: 1px solid #4fe22a;
+     flex: 0 1 auto;
+    padding: 20px;
+    text-align: center;
+}
+
 nav ul {
     display: flex;
 }
 
 nav li {
+        padding: 20px 10px 20px 10px;
     list-style: none;
-    padding: 20px;
+
 }
 
 nav li:hover {
     color: #000;
     background: #4fe22a;
+    cursor: pointer;
 }
 
 textarea {
@@ -37,6 +50,23 @@ button {
     border: 1px solid #4fe22a;
     background: #000000;
     color: #4fe22a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4fe22a;
+        padding: 20px;
+}
+
+nav a:hover {
+    color: #000;
+    background: #4fe22a;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #4fe22a;
+    text-decoration: none;
 }
 
 h1 {
@@ -63,20 +93,8 @@ h6 {
     font-size: x-small;
 }
 
-footer {
-    flex: 0 1 auto;
-    padding: 20px;
-    text-align: center;
-}
 
 /* border styles */
-nav {
-    border-bottom: 1px solid #4fe22a;
-}
-
-footer {
-    border-top: 1px solid #4fe22a;
-}
 
 .container {
     border: 1px solid #4fe22a;
@@ -116,7 +134,7 @@ footer {
     display: none;
 }
 
-.modal h5{
+.modal h5 {
     padding: 5px 0 5px 0;
 }
 
@@ -171,17 +189,16 @@ footer {
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-wrap div {
     margin: 20px;
-    text-align: center;
-    border: 1px solid #000; 
-    justify-content: center;
-    width: 200px; 
-    /* height: 200px; */
-    line-height: 200px;
-    /* flex: 1; */
+    border: 1px solid #000;
+}
+
+.flexwrap div a:hover {
+    padding: 0;
 }
 
 .flex-wrap div:hover {
@@ -269,6 +286,15 @@ footer {
 @media screen and (max-width: 380px) {
     nav li {
         font-size: x-small;
+        padding: 10px 5px 10px 5px;
+    }
+
+    nav a {
+        padding: 10px 5px 10px 5px;
+    }
+
+    nav a:hover {
+        padding: 10px 5px 10px 5px;
     }
 
     .modal {
