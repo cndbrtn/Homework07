@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -18,12 +20,12 @@
             <ul>
                 <li id="home"><a href="index.html">home</a></li>
                 <li id="porfolio"><a href="portfolio.html">portfolio</a></li>
-                <li id="contact">contact</li>
+                <li id="contact"><a href="mailto:cindy.brton@gmail.com?subject=Portfolio site">contact</a></li>
             </ul>
         </nav>
 
         <div class="row">
-            <div class="modal" id="contact-form">
+            <!-- <div class="modal" id="contact-form">
                 <div class="container">
 
                     <h5>Name: </h5>
@@ -37,13 +39,86 @@
                             id="clear">Clear</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="side">
                 <img class="fluid padding-bottom20" src="assets/img/profile-img.jpg">
-                <h3 id="hover-text">Hover over an image for more information</h3>
+                    <ul>
+                        <li><h5>Portfolio:</h5></li>
+                        <li><h4>Front end, back end, and full stack examh4les of my work as a developer</p></li>
+                    </ul>
+                <!-- <h3 id="hover-text">Hover over an image for more information</h3> -->
             </div>
             <div class="main">
-                <div class="flex-wrap">
+                <div class="portfolio-carousel">
+                    <div class="relative">
+                        <img src="assets/img/jsquiz.jpg">
+                        <div class="desc">
+                            <h5>
+                                <a target="_blank" href="https://github.com/cndbrtn/Homework04-JavaScript-Quiz">GitHub Repo</a> |
+                                <a target="_blank" href="https://cndbrtn.github.io/Homework04-JavaScript-Quiz/">Deployed App</a>
+                            </h5>
+                            <br>
+                            <p>A quiz about JS made with JS, test your knowledge!</p>
+                        </div>
+                </div>
+                    <div class="relative">
+                        <img src="assets/img/weatherapp.jpg">
+                        <div class="desc">
+                            <h5>
+                                <a target="_blank" href="https://githubt.com/cndbrtn/Homework06-Weather-Dashboard">GitHub Repo</a> | 
+                                <a target="_blank" href="https://cndbrtn.github.io/Homework06-Weather-Dashboard/">Deployed App</a>
+                            </h5>
+                            <br>
+                            <p>Check the weather in any city</p>
+                        </div>
+                </div>
+                    <div class="relative">
+                        <img src="assets/img/projectone.jpg">
+                        <div class="desc">
+                        <h5>
+                            <a target="_blank" href="https://github.com/hmbudzinski/OfficialProjectOne">GitHub Repo</a> | 
+                            <a target="_blank" href="https://hmbudzinski.github.io/OfficialProjectOne/">Deployed App</a>
+                        </h5>
+                        <br>
+                        <p>Find dessert recipies quick</p>
+                        </div>
+                </div>
+                    <div class="relative">
+                        <img src="assets/img/mojo.jpg">
+                        <div class="desc">
+                            <h5>
+                                <a target="_blank" href="https://github.com/BriGab/Project-Two">GitHub Repo</a> | 
+                                <a target="_blank" href="https://immense-retreat-62376.herokuapp.com/">Deployed App</a>
+                            </h5>
+                            <br>
+                            <p>Take a breath and contemplate with MoJo Journal</p>
+                        </div>
+                </div>
+                <div class="relative">
+                    <img src="assets/img/burger.jpg">
+                    <div class="desc">
+                            <h5>
+                                <a target="_blank" href="https://github.com/cndbrtn/Homework13-Eat-The-Burger">GitHub Repo</a> | 
+                                <a target="_blank" href="https://secure-thicket-44414.herokuapp.com/">Deployed App</a>
+                            </h5>
+                            <br>
+                            <p>Track which burgers you have yet to monch!</p>
+                        </div>
+                </div>
+                    <div class="relative">
+                        <img src="assets/img/employee-tracker.jpg">
+                        <div class="desc">
+                            <h5>
+                                <a target="_blank" href="https://github.com/cndbrtn/Homework12-Employee-Manager">GitHub Repo</a>                                
+                            </h5>
+                            <br>
+                            <p>Keep track of employees with this simple commad line app</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows"></div>
+                <!-- <div class="dottainer"></div> -->
+                <!-- <div class="flex-wrap">
                     <div data-value="folio1" class="hover">
                         <div class="info">Dessert Search</div>
                         <a href="https://hmbudzinski.github.io/OfficialProjectOne/" target="_blank">
@@ -65,13 +140,15 @@
                         </a><br>
                         <a href="https://github.com/cndbrtn/Homework06">GitHub Repo</a>
                     </div>
-                </div>
+                    <div data-value="folio4"></div>
+                </div> -->
             </div>
         </div>
-        <footer>&copy; cndbrtn 2019</footer>
+        <footer><h4>&copy; cndbrtn 2019</h4></footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
 

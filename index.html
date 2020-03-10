@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 
 <body>
@@ -16,55 +19,66 @@
     <div class="container">
         <nav>
             <ul>
-                <li id="home"><a href="index.html">about</a></li>
+                <li id="home"><a href="index.html">home</a></li>
                 <li id="porfolio"><a href="portfolio.html">portfolio</a></li>
-                <li id="contact">contact</li>
+                <li id="contact"><a href="mailto:cindy.brton@gmail.com?subject=Portfolio site">contact</a></li>
             </ul>
         </nav>
 
         <div class="row">
-            <div class="modal" id="contact-form">
-                <div class="container">
-
-                    <h5>Name: </h5>
-                    <input type="text" placeholder="your name" class="text-input">
-                    <h5>Email: </h5>
-                    <input type="text" placeholder="you@email.com">
-                    <h5>Comments: </h5>
-                    <textarea placeholder="soon I'll be able to use node for form submissions" id="comments"></textarea>
-                    <div class="row">
-                        <button value="submit" id="submit">Submit</button> <button value="clear"
-                            id="clear">Clear</button>
-                    </div>
-
+            <!-- <div class="modal" id="contact-form">
+                <div>
+                    <form action="mail_handler.php" method="post" class="container">
+                        <h5>Name: </h5>
+                        <input type="text" name="name" placeholder="your name" class="text-input">
+                        <h5>Email: </h5>
+                        <input type="text" name="email" placeholder="you@email.com">
+                        <h5>Comments: </h5>
+                        <textarea name="comments" placeholder="write your comments here" id="comments"></textarea>
+                        <div class="row">
+                            <button value="submit" id="submit">Submit</button> <button value="clear" id="clear">Clear</button>
+                        </div>                    
+                    </form>
                 </div>
-            </div>
+            </div> -->
             <div class="side">
-                <img class="fluid padding-bottom20" src="assets/img/profile-img.jpg">
+                <img class="fluid padding-bottom20" src="assets/img/profile-img.jpg" alt="Profile Image">
+                <div>
+                    <h5>Find Me Here:</h5>
+                    <ul>
+                        <li><a href="Cindy_Burton_Resume.pdf">Resume</a></li>
+                        <li><a href="https://github.com/cndbrtn">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/cindy-burton-10774380/">LinkedIn</a></li>
+                        <li><a href="mailto:cindy.brton@gmail.com">Email</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="main">
                 <h2>About</h2>
                 <p>
-                    <ul>
-                        <li>Name: CNDBRTN</li>
-                        <li>Origin: Denver</li>
-                        <li>Occupation: Freelancer</li>
-                    </ul>
+                        Hello! I go by Eugi and I'm a web developer and artist living in Denver with my pets in an apartment full of beautiful 
+                    plants. I've been a freelance artist in all sorts of creative fields since earning my MFA from the School of the Museum 
+                    of Fine Arts Boston in 2014. I've been making websites since I was 12, (over 20 years of experience with HTML and CSS 
+                    thanks to the importance of having the coolest AIM profile a pre-teen could have).
                 </p>
-                <br><br>
-                <h2>Find Me Here</h2>
+                <br>
                 <p>
-                    <ul>
-                        <li>Resume: <a href="Cindy_Burton_Resume.pdf">Resume PDF</a></li>
-                        <li>GitHub: <a href="https://cndbrtn.github.com">Profile</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/cindy-burton-10774380/">Profile</a></li>
-                        <li>Email: <a href="mailto:cindy.brton@gmail.com">cindy.brton@gmail.com</a></li>
-
-                    </ul>
+                        In the past my web design skills were aquired out of necessity, back when the internet was a place of homepages and message boards. 
+                    Every budding artist needed a portfolio website! Now my skills are a bit more sophisticated now. Coding (especially JavaScript) 
+                    feels good and natural to my brain. There's always challenges and new things to learn, which could overwhelm some, but constant challenge 
+                    and learning are where I thrive. 
+                </p>
+                <br>
+                <p>    
+                        I love to solve problems, make things work, and grow my knowledge and understanding with new projects and 
+                    materials. Web dev offers endless learning and challenges that I'm ready to tackle. I love making slick UIs and have a strong understanding 
+                    of design, an eye for color and contrast, and the drive to put it all togehter and make it work for the user. I also get a thrill out of databases 
+                    and servers. Even when not on the design side I love solving problems and making things work, even when I want to rip my hair out in the 
+                    middle of a problem. I'm tenacious and a little obsessive, but when it comes to coding that can be a huge boon.
                 </p>
             </div>
         </div>
-        <footer>&copy; cndbrtn 2019</footer>
+        <footer><h4>&copy; cndbrtn 2019</h4></footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
